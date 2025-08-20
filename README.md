@@ -4,8 +4,8 @@ Markdown
 
 # ✍️ Handwriting Line Segmentation with U-Net
 
-[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)  
-[![PyTorch](https://img.shields.io/badge/PyTorch-1.12+-red.svg)](https://pytorch.org/)  
+[![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/)  
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.2.0+-red.svg)](https://pytorch.org/)  
 [![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](LICENSE)
 
 A modular deep learning pipeline for **handwritten document line segmentation** using the **U-Net architecture**.  
