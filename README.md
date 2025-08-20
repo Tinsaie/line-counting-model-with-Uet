@@ -15,7 +15,6 @@ This repository supports OCR preprocessing, handwriting recognition research, an
  ### 📚 Datasets
 You can train this project on:
 
-* [IAM Handwriting Database](https://fki.tic.bfh.ch/databases/iam-handwriting-database)
 * [Line Counter Data Set](https://www.kaggle.com/datasets/tinsaiebahiru/line-counter-data-set)
 
 Or your own dataset structured as:
