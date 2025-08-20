@@ -1,7 +1,3 @@
-No problem. Here is the complete GitHub README.md file, ready for you to copy and paste directly into your repository.
-
-Markdown
-
 # ✍️ Handwriting Line Segmentation with U-Net
 
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/)  
