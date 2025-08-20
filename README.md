@@ -15,7 +15,9 @@ This repository supports OCR preprocessing, handwriting recognition research, an
 
 ## 📂 Project Structure
 
-```bash
+---
+
+```
 handwriting-line-segmentation/
 ├── data_loader.py     # Dataset loading & preprocessing
 ├── model.py           # U-Net model definition
@@ -25,55 +27,61 @@ handwriting-line-segmentation/
 ├── main.py            # Entry point to run training/testing
 ├── requirements.txt   # Python dependencies
 └── README.md          # Project documentation
-✨ Features
-Dataset loader with preprocessing and augmentation (flip, crop, resize).
 
-U-Net model for precise handwritten line segmentation.
+```
+### ✨ Features
+* Dataset loader with preprocessing and augmentation (flip, crop, resize).
+* U-Net model for precise handwritten line segmentation.
+* Training pipeline with checkpointing, early stopping, and configurable hyperparameters.
+* Evaluation metrics: Dice, IoU, precision, recall.
+* Visualization of predictions overlayed on original images.
+* Modular design for easy experimentation.
 
-Training pipeline with checkpointing, early stopping, and configurable hyperparameters.
 
-Evaluation metrics: Dice, IoU, precision, recall.
+---
 
-Visualization of predictions overlayed on original images.
+## ⚙️ Installation
 
-Modular design for easy experimentation.
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/handwriting-line-segmentation.git](https://github.com/your-username/handwriting-line-segmentation.git)
+    cd handwriting-line-segmentation
+    ```
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **(Optional)** Ensure GPU support by installing PyTorch with CUDA: [PyTorch Installation](https://pytorch.org/get-started/locally/)
 
-⚙️ Installation
-Clone the repository:
+---
 
-Bash
+## 🚀 Usage
 
-git clone [https://github.com/your-username/handwriting-line-segmentation.git](https://github.com/your-username/handwriting-line-segmentation.git)
-cd handwriting-line-segmentation
-Install dependencies:
-
-Bash
-
-pip install -r requirements.txt
-(Optional) Ensure GPU support by installing PyTorch with CUDA: PyTorch Installation
-
-🚀 Usage
-Train the model
-
-Bash
-
+**Train the model**
+```
 python main.py --mode train \
                --epochs 50 \
                --batch-size 8 \
                --lr 1e-4 \
                --save-dir checkpoints/
-Evaluate the model
-
-Bash
-
+```
+---
+```
 python main.py --mode eval \
                --checkpoint checkpoints/best_model.pth
+```
+---
 Visualize predictions
 
-Bash
+---
 
+Bash
+```
 python main.py --mode visualize \
-               --checkpoint checkpoints/best_model.pth
+            --checkpoint checkpoints/best_model.pth
+```
+---
+
 📚 Datasets
 You can train this project on:
 
@@ -82,7 +90,7 @@ IAM Handwriting Database
 Kaggle Line Counter Dataset
 
 Or your own dataset structured as:
-
+```
 data/
 ├── images/
 │   ├── sample1.png
@@ -90,10 +98,12 @@ data/
 └── masks/
     ├── sample1_mask.png
     ├── sample2_mask.png
+
+```
 📊 Example Results
 Input Image	Ground Truth Mask	Predicted Mask
-(Add sample screenshot/plot here)	(Add sample screenshot/plot here)	(Add sample screenshot/plot here)
 
-Export to Sheets
+---
+
 📝 License
 This project is licensed under the Apache License 2.0.
