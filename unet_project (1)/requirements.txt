@@ -1,0 +1,7 @@
+tensorflow>=2.11
+opencv-python
+numpy
+matplotlib
+albumentations
+scikit-learn
+tqdm
