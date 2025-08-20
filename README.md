@@ -14,6 +14,7 @@ This repository supports OCR preprocessing, handwriting recognition research, an
 ---
 
 ```
+unet-trainig.ipynb
 handwriting-line-segmentation/
 ├── data_loader.py     # Dataset loading & preprocessing
 ├── model.py           # U-Net model definition
@@ -23,7 +24,6 @@ handwriting-line-segmentation/
 ├── main.py            # Entry point to run training/testing
 ├── requirements.txt   # Python dependencies
 └── README.md          # Project documentation
-unet-trainig.ipynb
 ```
 ### ✨ Features
 * Dataset loader with preprocessing and augmentation (flip, crop, resize).
